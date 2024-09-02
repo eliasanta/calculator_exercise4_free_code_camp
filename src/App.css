@@ -1,0 +1,136 @@
+/* App.css */
+
+/* Stile generale per la calcolatrice */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* Contenitore principale della calcolatrice */
+.calculator-container {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: white;
+  width: 400px;
+}
+
+/* Display della calcolatrice */
+#display {
+  padding: 20px;
+  text-align: right;
+  font-size: 2em;
+  border-bottom: 1px solid #ccc;
+  background-color: #eee;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Stile per il display della formula */
+.formulaScreen {
+  font-size: 0.8em;
+  color: #666;
+  padding: 10px;
+}
+
+/* Stile per il display del risultato */
+.outputScreen {
+  font-size: 2em;
+  color: #000;
+}
+
+/* Griglia dei numeri */
+.number-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: #ddd;
+}
+
+/* Ogni elemento della griglia */
+.number-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  color: #000;
+  border: 1px solid #ccc;
+  padding: 20px;
+  font-size: 1.5em;
+  cursor: pointer;
+  user-select: none;
+}
+
+.number-item:hover {
+  background: #f0f0f0;
+}
+
+/* Stile per i pulsanti delle operazioni */
+.operations {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: #ddd;
+  color: #000;
+}
+
+/* Ogni pulsante di operazione */
+.operations span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  font-size: 1.5em;
+  cursor: pointer;
+  user-select: none;
+}
+
+.operations span:hover {
+  background: #f0f0f0;
+}
+
+/* Pulsante di uguale e decimale */
+#equals,
+#clear {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f39c12;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+  padding: 20px;
+  border: 1px solid #e67e22;
+}
+#decimal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #a4a3a0;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+  padding: 20px;
+}
+
+#equals:hover,
+#decimal:hover,
+#clear:hover {
+  background: #e67e22;
+}
+
+/* Pulsante di cancellazione */
+#clear {
+  background: #c0392b;
+  border: 1px solid #e74c3c;
+}
+
+#clear:hover {
+  background: #e74c3c;
+}
